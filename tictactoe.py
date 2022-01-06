@@ -10,9 +10,9 @@ def main():
         if (has_winner(board) or is_a_draw(board)):
             answer = input("did you like the game  y/n ")
             if answer == "n":
-                print("thats too bad") 
+                print("\033[1;32m Thats too bad  \n")
             if answer == "y":
-                print("Great thanks for playing")
+                print("\033[1;32m Great thanks for playing   \n")
                 
                 
                 
@@ -34,13 +34,13 @@ def create_board():
     return board
 
 def board_display(board):
-    print()
+    print("\033[1;32m \n")
     print(f"{board[0]}|{board[1]}|{board[2]}|{board[3]}")
-    print('-+-+-')
+    print("\033[1;32m -+-+-  \n")
     print(f"{board[4]}|{board[5]}|{board[6]}|{board[7]}")
-    print('-+-+-')
+    print("\033[1;32m -+-+-  \n")
     print(f"{board[8]}|{board[9]}|{board[10]}|{board[11]}")
-    print('-+-+-')
+    print("\033[1;32m -+-+-  \n")
     print(f"{board[12]}|{board[13]}|{board[14]}|{board[15]}")
     print()
     
