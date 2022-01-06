@@ -5,13 +5,24 @@ def main():
         board_display(board)
         make_move(player, board)
         player = next_player(player)
-    board_display(board)
-    print("Good game. Thanks for playing!") 
-    
-    while (has_winner(board) or is_a_draw(board)):
-        answer = input("do you want to play again y/n")
-        if answer == "n":
-            break
+        board_display(board)
+       
+        if (has_winner(board) or is_a_draw(board)):
+            answer = input("did you like the game  y/n ")
+            if answer == "n":
+                print("thats too bad") 
+            if answer == "y":
+                print("Great thanks for playing")
+                
+                
+                
+                    
+                
+                
+                
+
+            
+
         
 
 
